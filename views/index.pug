@@ -1,30 +1,74 @@
 extends layout
 
 block content
-        #section_1.parallax
+        section#section_1.parallax(data-stellar-background-ratio="0.5")
             nav.navbar.navbar-expand-sm.justify-content-center
                 img.navbar-brand.logo(src="/images/logo.jpg")
                 ul.navbar-nav
-                    li.nav-item.active(href="#")
-                        a.nav-link Home
-                    li.nav-item(href="#")
-                        a.nav-link Our Services
-                    li.nav-item(href="#")
-                        a.nav-link What is UPGENCY?
-                    li.nav-item(href="#")
-                        a.nav-link.disabled Why We Differ
-                    li.nav-item(href="#")
-                        a.nav-link.disabled Contact Us
+                    li.nav-item.active
+                        a.nav-link#first(href="#") Home
+                    li.nav-item
+                        a.nav-link#second(href="#") Our Services
+                    li.nav-item
+                        a.nav-link#third(href="#") What is UPGENCY?
+                    li.nav-item
+                        a.nav-link#fourth(href="#") Why We Differ
+                    li.nav-item
+                        a.nav-link#fifth(href="#") Contact Us
             .main
                 div
-                    p.huge UNDERSTAND YOUR AUDIENCE
+                    p.huge.altfont UNDERSTAND
+                    p.huge.altfont YOUR
+                    p.huge.altfont AUDIENCE
                     hr
-                    p.huge TARGET THEIR NEEDS
+                    p.huge TARGET
+                    p.huge THEIR
+                    p.huge NEEDS
 
-                    p.middle.separate UP YOUR GAME
-        div#section_2
+                p.middle.separate UP YOUR GAME
+        section#section_2
             .main
                 .small#hr
                     hr.hline
                 p.huge OUR
                 p.huge SERVICES
+                .row
+                    .divtable
+                        .large.separate
+                            hr.sline.purple
+                        p DIGITAL MARKETING
+                        img.services_img(src="/images/phone.png")
+                    .divtable
+                        .large.separate
+                            hr.sline.purple
+                        p CREATIVITY
+                        img.services_img(src="/images/bulb.png")
+                    .divtable
+                        .large.separate
+                            hr.sline.purple
+                        p MEDIA
+                        img.services_img(src="/images/camera.png")
+                    .divtable
+                        .large.separate
+                            hr.sline.purple
+                        p EVENTS
+                        img.services_img(src="/images/ticket.png")
+        section#section_3
+            .main
+                div#about_div
+                    .small#hr
+                        hr.hline.purple
+                    p.huge.altfont WHAT IS UPGENCY?
+                    p#about.altfont We are a team of young marketers specialising in
+                        strong.purplefont SEO, Paid Social, PPC, Media &amp; Video Production and Event Planning...
+                        |  This means we can organise your events, market them through digital media and produce all the visual material strong
+                        strong  within the same agency!
+                        |  In events we specialise in corporate and live music, but have had a plethora of experience in all fields, so in addition to organisation of the event we can also cover ticketing, security badges, passes and anything you need under one roof.
+                    p.altfont We  invest our creativity in our projects, trying to get as much organic traffic as possible reducing your costs, utilising our team of specialists in SEM.
+                    p.altfont
+                        strong Contact us for a quote now...
+                        |  we will do your website audit for free as part of your first pack!
+
+
+
+        script(src="/javascripts/main.js")

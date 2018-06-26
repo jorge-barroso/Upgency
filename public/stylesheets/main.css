@@ -3,17 +3,21 @@ body, html {
 }
 
 body {
-    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
     color: #ffffff !important;
 }
 
 a {
-    color: #00B7FF;
+    /*color: #00B7FF;*/
+    color: #ffffff !important;
 }
 
 /*.image {
     width: 100%;
 }*/
+.services_img {
+    max-height: 50%;
+}
 
 .parallax {
     background-attachment: fixed;
@@ -35,6 +39,22 @@ nav {
     max-height: 5%
 }
 
+div.small {
+    width: 5%
+}
+
+div.large {
+    width: 12%
+}
+
+div#hr {
+    margin-bottom: 3%;
+}
+
+.divtable {
+    width: 25%
+}
+
 div.main {
     width: 63%;
     margin: 0 auto;
@@ -42,20 +62,28 @@ div.main {
     padding: 5% 0%;
 }
 
-div.main div:not(.small) {
-    width: 63%;
-}
-
-div.small {
-    width: 5%
-}
-
-div#hr {
-    margin-bottom: 3%;
+div#about_div {
+    width: 85%;
 }
 
 p.huge {
     font: bold 79px/0.9em raleway, sans-serif
+}
+
+p.middle {
+    letter-spacing: 0.25em;
+    font: bold 72px/0.9em raleway, sans-serif
+}
+
+p#about {
+    margin-top: 12%;
+}
+
+.altfont {
+    color: #1B1B1E;
+}
+.purplefont {
+    color: #9E60C4;
 }
 
 hr {
@@ -66,12 +94,34 @@ hr.hline {
     border-top: 10px solid #ffffff !important;
 }
 
-div#section_1 {
+hr.sline {
+    border-top: 6px solid #ffffff !important;
+}
+
+.hline.purple {
+    border-top: 10px solid #9E60C4 !important
+}
+
+.sline.purple {
+    border-top: 6px solid #9E60C4 !important;
+}
+
+.separate {
+    margin-top: 6%
+}
+
+#section_1 {
     background-image: url("/images/1.jpg");
 }
-div#section_2 {
-    background: #000000 none repeat scroll 0% 0%;
+#section_2 {
+    background: #42484D none repeat scroll 0% 0%;
 }
-div#section_3 {
-    background-image: url("/images/2.jpg");
+#section_3 {
+    background:
+        linear-gradient(
+            rgba(255, 255, 255, 0.6),
+            rgba(255, 255, 255, 0.6)
+        ),
+        url("/images/2.jpg");
+    background-size: 100%
 }
