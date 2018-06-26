@@ -1,23 +1,30 @@
 extends layout
 
 block content
-  script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
-  script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.js")
-  script(src="/javascripts/parallax.min.js" defer)
-  nav.navbar.navbar-toggleable-sm.navbar-trans.navbar-inverse
-        div#navbarToggler-1.collapse.navbar-collapse.pull-xs-right.justify-content-end
-            ul.navbar-nav.mt-2.mt-md-0
-                li#navbar-1.nav-item
-                    a.nav-link Home
-                li#navbar-2.nav-item
-                    a.nav-link Our Services
-                li#navbar-3.nav-item
-                    a.nav-link What is UPGENCY?
-                li#navbar-4.nav-item
-                    a.nav-link Why We Differ
-                li#navbar-5.nav-item
-                    a.nav-link Contact Us
+        #section_1.parallax
+            nav.navbar.navbar-expand-sm.justify-content-center
+                img.navbar-brand.logo(src="/images/logo.jpg")
+                ul.navbar-nav
+                    li.nav-item.active(href="#")
+                        a.nav-link Home
+                    li.nav-item(href="#")
+                        a.nav-link Our Services
+                    li.nav-item(href="#")
+                        a.nav-link What is UPGENCY?
+                    li.nav-item(href="#")
+                        a.nav-link.disabled Why We Differ
+                    li.nav-item(href="#")
+                        a.nav-link.disabled Contact Us
+            .main
+                div
+                    p.huge UNDERSTAND YOUR AUDIENCE
+                    hr
+                    p.huge TARGET THEIR NEEDS
 
-  div.image.parallax-window(data-parallax="scroll" data-image-src="/images/1.jpg")
-  div
-  div.image.parallax-window(data-parallax="scroll" data-image-src="/images/2.jpg")
+                    p.middle.separate UP YOUR GAME
+        div#section_2
+            .main
+                .small#hr
+                    hr.hline
+                p.huge OUR
+                p.huge SERVICES
