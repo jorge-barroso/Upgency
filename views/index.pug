@@ -16,11 +16,11 @@ block content
                     li.nav-item
                         a.nav-link#fifth(href="#") Contact Us
             .main
-                div
+                .header
                     p.huge.altfont UNDERSTAND
                     p.huge.altfont YOUR
                     p.huge.altfont AUDIENCE
-                    hr
+                    hr#main-hr
                     p.huge TARGET
                     p.huge THEIR
                     p.huge NEEDS
@@ -30,8 +30,9 @@ block content
             .main
                 .small#hr
                     hr.hline
-                p.huge OUR
-                p.huge SERVICES
+                .header
+                    p.huge OUR
+                    p.huge SERVICES
                 .row
                     .divtable
                         .large.separate
@@ -55,12 +56,13 @@ block content
                         img.services_img(src="/images/ticket.png")
         section#section_3
             .main
-                div#about_div
+                div
                     .small#hr
                         hr.hline.purple
-                    p.huge.altfont WHAT IS UPGENCY?
+                    .header
+                        p.huge.altfont WHAT IS UPGENCY?
                     p#about.altfont We are a team of young marketers specialising in
-                        strong.purplefont SEO, Paid Social, PPC, Media &amp; Video Production and Event Planning...
+                        strong.purplefont  SEO, Paid Social, PPC, Media &amp; Video Production and Event Planning...
                         |  This means we can organise your events, market them through digital media and produce all the visual material strong
                         strong  within the same agency!
                         |  In events we specialise in corporate and live music, but have had a plethora of experience in all fields, so in addition to organisation of the event we can also cover ticketing, security badges, passes and anything you need under one roof.
@@ -68,7 +70,68 @@ block content
                     p.altfont
                         strong Contact us for a quote now...
                         |  we will do your website audit for free as part of your first pack!
-
-
+        section#section_4
+            .main
+                div#about_div
+                    .small#hr
+                        hr.hline.purple
+                    .header
+                        p.huge.altfont WHY WE DIFFER!
+                    p.altfont I'm sure as a thriving business owner you're targeted constantly with services of SEO in you spam box or receiving a barrage of cold calls...
+                    p.altfont How we differ from our competitors is, we create a complete, personal and unique experience, we work for you,
+                        strong  YOU ARE THE PROJECT MANAGER!
+                        |  - We understand you have a business to run, that's why we work to your needs with our thoroughly tested packages of what works the best, but we make them fully customisable to your needs,
+                    p.altfont
+                        strong.purplefont What works for others may not be what you're looking for
+                        |  or work for you, we wont sell the same package to every company so they're in competition, we make it yours and yours alone, like other companies we don't use stored templates, we start from scratch every time but with the turnaround and efficiency you get from automated services but fully tailored to your needs, image, business model, timescale and budget.
+                    p.altfont
+                        strong Get in touch now
+                        |  and get your quote today, let us help your business expand!
+        section#section_5.parallax
+            .main
+                .small#hr
+                    hr.hline
+                .header
+                    p.huge FUN FACTS
+                .row
+                    .divtable
+                        p PART OF THE TEAM SPECIALISE IN TOURISM
+                    .divtable
+                        p OUR EVENT MANAGER TOURED WITH DON BROCO AND 5 SECONDS OF SUMMER
+                    .divtable
+                        p OUR GRAPHICS DESIGNER IS FROM SPAIN... BUT HE IS ALLERGIC TO THE SUN!
+                    .divtable
+                        p WE HIRED WHAT WE FELT WERE THE EXPERTS IN THEIR FIELD... IT JUST SO HAPPENS THAT THEY ARE GOOD FRIENDS
+        section#section_6
+            .main
+                .small#hr
+                    hr.hline.purple
+                .header
+                    p.huge.altfont CONTACT US!
+                div.row
+                    #form-div
+                        form(action="/", method="post")
+                            div
+                                div
+                                    input.form-control#name-input(type="text", placeholder="Name *", required)
+                                    input.form-control#email-input(type="email", placeholder="Email *", required)
+                                input.form-control#company-input(type="text", placeholder="Company Name")
+                                textarea.form-control(name="message", cols="30", rows="10", placeholder="Tell us about your needs...")
+                                button#submit(type="submit") Send
+                    #contact-div
+                        p.altfont
+                            strong ASK FOR YOUR QUOTE NOW!
+                        p.altfont It is this easy to get more online exposure - or the video or logo you always dream about - or the perfect event - It is up to you to up your game!
+                        p.altfont
+                            strong email: info@upgency.com
+                        p.altfont
+                            strong telf: 01785 213302‬
+        footer.center-flex
+            .main
+                div.row
+                    div
+                        div#copyright Copyright and rights reserved - #{new Date().getFullYear()} Upgency LTD &copy;
+                        div#policy
+                    #followus.center-flex
 
         script(src="/javascripts/main.js")

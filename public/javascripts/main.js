@@ -6,7 +6,7 @@ const $section_1 = $('#section_1');
 const $section_2 = $('#section_2');
 const $section_3 = $('#section_3');
 const $section_4 = $('#section_4');
-const $section_5 = $('#section_5');
+const $section_6 = $('#section_6');
 
 const $first = $('#first')
 const $second = $('#second')
@@ -28,7 +28,7 @@ $fourth.click(function(){
     scroll($section_4);
 })
 $fifth.click(function(){
-    scroll($section_5);
+    scroll($section_6);
 })
 
 function scroll(element) {
