@@ -19,6 +19,7 @@ a {
 
 ul li {
     display: inline;
+    margin-right: 1em;
 }
 .services_img {
     max-height: 50%;
@@ -57,7 +58,8 @@ div#hr {
 }
 
 .divtable {
-    width: 25%
+    width: 25%;
+    min-width: 8em;
 }
 
 div.main {
@@ -81,6 +83,7 @@ p.huge {
 
 div.header {
     margin-bottom: 5em;
+    width: 67%;
 }
 
 p.middle {
@@ -97,8 +100,6 @@ p.middle {
 
 hr#main-hr {
     border-top: 2px solid #ffffff;
-    float: left;
-    width: 67%;
 }
 
 hr.hline {
@@ -155,14 +156,24 @@ div.center-flex{
     background-image: url("/images/5.png");
 }
 
+#section_5 .divtable {
+    display: flex;
+}
+
 #section_5 .divtable p {
     letter-spacing: 0.2em;
     padding: 0em 8em 4em 0em;
     /*font: normal normal bold 16px/1.4em raleway,sans-serif;*/
 }
 
+#section_6 .main {
+    overflow: auto;
+}
+
 #form-div {
     width: 60%;
+    float: left;
+    min-width: 14em;
 }
 
 #form-div form {
@@ -172,6 +183,8 @@ div.center-flex{
 #contact-div {
     width:  40%;
     padding: 0em 2em;
+    float: right;
+    min-width: 14em;
 }
 
 #contact-div p {
@@ -206,16 +219,27 @@ div.center-flex{
     width: 26vh;
     background-color: #0751E0;
     margin-left: auto;
+    display: table;
 }
 
-#followus div {
+#followus-subcontainer {
     width: 80%;
     text-align: center;
-    display: inline-block;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#followus-subcontainer p {
+    margin-top: 3vh;
+}
+
+#media {
+    display: inline;
 }
 
 #followus div p {
-    margin-top: 30%;
+    font-size: 1.5em;
+    font-style: bold;
 }
 
 #followus div ul {
@@ -224,6 +248,7 @@ div.center-flex{
 
 #followus-hr {
     border-top: 3px solid #ffffff;
+    width: 90%;
 }
 
 form > div > textarea {

@@ -108,7 +108,7 @@ block content
                     hr.hline.purple
                 .header
                     p.huge.altfont CONTACT US!
-                div.row
+                div
                     #form-div
                         form#contact-form(action="/", method="post")
                             div
@@ -133,19 +133,20 @@ block content
                         div#copyright Copyright and rights reserved - #{new Date().getFullYear()} Upgency LTD &copy;
                         div#policy
                     #followus.center-flex
-                        div
-                            p FOLLOW US
+                        div#followus-subcontainer
+                            p
+                                strong FOLLOW US
                             hr#followus-hr.sline
-                            .row
+                            #media.row
                                 ul
-                                    li
-                                        a(href="")
+                                    //li
+                                        a(href="", target="_blank")
                                             img(src="/images/facebook_icon.png", alt="Facebook")
                                     li
-                                        a(href="")
+                                        a(href="https://twitter.com/Upgency_UK/", target="_blank")
                                             img(src="/images/twitter_icon.png", alt="Twitter")
                                     li
-                                        a(href="")
+                                        a(href="https://www.instagram.com/upgency_uk/", target="_blank")
                                             img(src="/images/instagram_icon.png", alt="Instagram")
 
         script(src="/javascripts/main.min.js")
