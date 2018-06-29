@@ -54,7 +54,7 @@ block content
                             hr.sline.purple
                         p EVENTS
                         img.services_img(src="/images/ticket.png")
-        section#section_3
+        section#section_3.parallax
             .main
                 div
                     .small#hr
@@ -110,14 +110,14 @@ block content
                     p.huge.altfont CONTACT US!
                 div.row
                     #form-div
-                        form(action="/", method="post")
+                        form#contact-form(action="/", method="post")
                             div
                                 div
-                                    input.form-control#name-input(type="text", placeholder="Name *", required)
-                                    input.form-control#email-input(type="email", placeholder="Email *", required)
-                                input.form-control#company-input(type="text", placeholder="Company Name")
-                                textarea.form-control(name="message", cols="30", rows="10", placeholder="Tell us about your needs...")
-                                button#submit(type="submit") Send
+                                    input.form-control#name(name="name", type="text", placeholder="Name *", required)
+                                    input.form-control#email(name="email", type="email", placeholder="Email *", required)
+                                input.form-control#company(name="company", type="text", placeholder="Company Name")
+                                textarea.form-control#message(name="message", cols="30", rows="10", placeholder="Tell us about your needs...")
+                                button#submit.btn(type="button") Send
                     #contact-div
                         p.altfont
                             strong ASK FOR YOUR QUOTE NOW!
@@ -133,17 +133,19 @@ block content
                         div#copyright Copyright and rights reserved - #{new Date().getFullYear()} Upgency LTD &copy;
                         div#policy
                     #followus.center-flex
-                        p FOLLOW US
-                        hr.hline
-                        ul
-                            li
-                                a(href="")
-                                    img(src="", alt="")
-                            li
-                                a(href="")
-                                    img(src="", alt="")
-                            li
-                                a(href="")
-                                    img(src="", alt="")
+                        div
+                            p FOLLOW US
+                            hr#followus-hr.sline
+                            .row
+                                ul
+                                    li
+                                        a(href="")
+                                            img(src="/images/facebook_icon.png", alt="Facebook")
+                                    li
+                                        a(href="")
+                                            img(src="/images/twitter_icon.png", alt="Twitter")
+                                    li
+                                        a(href="")
+                                            img(src="/images/instagram_icon.png", alt="Instagram")
 
-        script(src="/javascripts/main.js")
+        script(src="/javascripts/main.min.js")

@@ -14,6 +14,9 @@ const $third = $('#third')
 const $fourth = $('#fourth')
 const $fifth = $('#fifth')
 
+const form = $('#contact-form');
+const submit = $('#submit');
+
 $first.click(function(){
     scroll($section_1);
 })
@@ -36,3 +39,11 @@ function scroll(element) {
         scrollTop: element.offset().top
     }, "slow");
 }
+
+submit.click(function() {
+    $.post("/", form.serialize(), function() {
+        console.log(200);
+    }).fail(function(data) {
+        console.log(data);
+    });
+})

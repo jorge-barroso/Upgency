@@ -3,9 +3,13 @@ body, html {
 }
 
 body {
-    font: 16px "Lucida Grande", Helvetica, Arial, sans-serif !important;
+    font: 16px/1.2em "Lucida Grande", Helvetica, Arial, sans-serif !important;
     line-height: 1.5em;
     color: #ffffff !important;
+}
+
+p {
+    line-height: 1.5em;
 }
 
 a {
@@ -13,6 +17,9 @@ a {
     color: #ffffff !important;
 }
 
+ul li {
+    display: inline;
+}
 .services_img {
     max-height: 50%;
 }
@@ -69,7 +76,7 @@ footer {
 }
 
 p.huge {
-    font: bold 79px/0.9em raleway, sans-serif;
+    font: bold 4em/0.9em raleway, sans-serif;
 }
 
 div.header {
@@ -78,7 +85,7 @@ div.header {
 
 p.middle {
     letter-spacing: 0.25em;
-    font: bold 72px/0.9em raleway, sans-serif
+    font: bold 3.3em/0.9em raleway, sans-serif
 }
 
 .altfont {
@@ -90,6 +97,8 @@ p.middle {
 
 hr#main-hr {
     border-top: 2px solid #ffffff;
+    float: left;
+    width: 67%;
 }
 
 hr.hline {
@@ -129,7 +138,7 @@ div.center-flex{
     background: #42484D none repeat scroll 0% 0%;
 }
 #section_3 {
-    background:
+    background-image:
         linear-gradient(
             rgba(255, 255, 255, 0.75),
             rgba(255, 255, 255, 0.75)
@@ -148,9 +157,8 @@ div.center-flex{
 
 #section_5 .divtable p {
     letter-spacing: 0.2em;
-    line-height: 1.2em;
     padding: 0em 8em 4em 0em;
-    font: normal normal bold 16px/1.4em raleway,sans-serif;
+    /*font: normal normal bold 16px/1.4em raleway,sans-serif;*/
 }
 
 #form-div {
@@ -170,12 +178,12 @@ div.center-flex{
     letter-spacing: 0.1em;
 }
 
-#name-input {
+#name {
     float: left;
     width: 45%;
 }
 
-#email-input {
+#email {
     float: right;
     width: 45%;
 }
@@ -198,6 +206,24 @@ div.center-flex{
     width: 26vh;
     background-color: #0751E0;
     margin-left: auto;
+}
+
+#followus div {
+    width: 80%;
+    text-align: center;
+    display: inline-block;
+}
+
+#followus div p {
+    margin-top: 30%;
+}
+
+#followus div ul {
+    padding: 0;
+}
+
+#followus-hr {
+    border-top: 3px solid #ffffff;
 }
 
 form > div > textarea {
